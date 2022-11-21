@@ -1,0 +1,5 @@
+backend-assignment/node_modules
+se-backend-react-app/node_modules
+se-backend-react-app/build
+se-backend-react-app/.env
+backend-assignment/.env

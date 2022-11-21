@@ -1,0 +1,49 @@
+GET http://localhost:3000/users/all
+
+###
+
+POST http://localhost:3000/users/signup
+Content-Type: application/json
+
+{
+    "email": "manikanta@gmail.com",
+    "password": "mani123",
+    "name": "Manikanta",
+    "bio": "This is Mani's bio",
+    "profileUrl": "http://www.google.com"
+}
+
+###
+
+POST http://localhost:3000/users/login
+Content-Type: application/json
+
+{
+    "email": "manikanta@gmail.com",
+    "password": "mani123"
+}
+
+###
+
+GET  http://localhost:3000/users/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzN2EwNzliNTcxZWM4MjZiMGUyNGY5MiIsImlhdCI6MTY2ODk0MTcyMywiZXhwIjoxNjcxNTMzNzIzfQ.RiwOAtJcsXLJDR1c13hrHsqdXm7KWemOXY4MiJ8NZjk
+
+###
+
+PUT  http://localhost:3000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzN2EwNzliNTcxZWM4MjZiMGUyNGY5MiIsImlhdCI6MTY2ODk0MTcyMywiZXhwIjoxNjcxNTMzNzIzfQ.RiwOAtJcsXLJDR1c13hrHsqdXm7KWemOXY4MiJ8NZjk
+Content-Type: application/json
+
+{
+    "name": "Manikanta Alapati"
+}
+
+###
+
+POST http://localhost:3000/add
+Content-Type: application/json
+
+{
+    "firstInput": 1,
+    "secondInput": 2
+}
